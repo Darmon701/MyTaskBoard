@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Task Board</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div>
+        <div class="myTaskBoard"></div>
+        <div class="note">
+            <textarea id="taskText" placeholder="Write your task here"></textarea>
+            <input id="taskDate" type="date" min="01/01/0001" max="31/12/9999" placeholder="">
+            <input id="taskTime" type="time" placeholder="">
+            <button onclick="createNewStickyNote()" id="addTaskButton">Add Task</button>
+        </div>
+        <div id="warningText"></div>
+    </div>
+    <div id="savedNotes" class="savedNotes">
+
+    </div>
+
+
+    <script src="constructor.js"></script>
+    <script src="DOM.js"></script>
+    <script src="controler.js"></script>
+</body>
+
+</html>
