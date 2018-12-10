@@ -1,0 +1,144 @@
+body {
+    background-image: url("JPG files/tile.jpg")
+}
+
+.myTaskBoard {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 300px;
+    background-image: url('JPG files/title.png');
+    height: 50px;
+    position: relative;
+    right: -43%;
+}
+
+.note {
+    background-image: url('JPG files/formbg.jpg');
+    position: relative;
+    width: 450px;
+    height: 212px;
+    left: 35%;
+    top: 20%;
+    border-radius: 12px;
+}
+
+#taskText {
+    position: relative;
+    background: none;
+    border: none;
+    font-size: 20px;
+    width: 370px;
+    height: 161px;
+    top: 16px;
+    line-height: 1.7;
+    left: 17%;
+    resize: none;
+}
+
+#taskDate {
+    background: none;
+    top: 8%;
+    left: 17%;
+    position: relative;
+}
+
+#taskTime {
+    background: none;
+    top: 8%;
+    left: 17%;
+    position: relative;
+}
+
+#addTaskButton {
+    position: relative;
+    top: 8%;
+    left: 32%;
+    background: none;
+    border-radius: 8px;
+}
+
+.savedNotes {
+    display: block;
+    width: 95%;
+    height: auto;
+    margin-top: 3%;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.newNote {
+    margin: 2%;
+    font-family: 'Courier New';
+    background-image: url('JPG files/notebg.png');
+    display: inline-block;
+    font: status-bar;
+    position: relative;
+    width: 170px;
+    height: 200px;
+    padding-top: 48px;
+    visibility: visible;
+    opacity: 1;
+    -webkit-animation: fadeIn 600ms linear;
+}
+
+@keyframes fadeIn{
+   from {opacity: 0;}
+   to {opacity: 1;}
+}
+
+#innerTextNote {
+    width: 90%;
+    font-size: 60%;
+    left: 6%;
+    line-height: 16px;
+    position: absolute;
+    white-space: pre-wrap;
+    height: 60%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#innerDateNote {
+    position: absolute;
+    font-size: 78%;
+    bottom: 11%;
+    left: 6%;
+}
+
+#innerTimeNote {
+    position: absolute;
+    bottom: 3%;
+    left: 6%;
+    font-size: 77%;
+}
+
+#closeButton {
+    display: none;
+}
+
+.newNote:hover>#closeButton {
+    position: absolute;
+    top: 7%;
+    right: 3%;
+    color: darkgoldenrod;
+    font-size: small;
+    color: red;
+    cursor: pointer;
+    display: inline;
+}
+
+.deleteFadeOut {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 1s, opacity 1s linear;
+}
+
+#warningText {
+    position: relative;
+    display: inline;
+    text-align: center;
+    color: red;
+    font-size: large;
+    background-color: black;
+    left: 50%;
+}
